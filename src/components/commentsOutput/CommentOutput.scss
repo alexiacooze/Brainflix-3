@@ -1,0 +1,85 @@
+@use "../../styles/mixins.scss" as *;
+@use "../../styles/partials.scss" as *;
+
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.output {
+  @include tablet {
+   margin-left: 2.5rem;
+   margin-right: 5rem;
+   
+    }
+
+  @include laptop {
+   margin-left: 7rem;
+   margin-right: 3rem;
+    }
+
+  display: flex;
+  border-bottom: 1.5px solid #E1E1E1;
+  margin-left: 1rem;
+  margin-right: 1rem;
+
+  &__circle-container {
+    
+  }
+
+  &__circle {
+    height: 45px;
+    width: 45px;
+    background-color: #e1e1e1;
+    border-radius: 50%;
+    padding-right: 3rem;
+    margin-top: 1rem;
+  }
+      
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 1rem;
+    }
+
+    &__name {
+        font-weight: $fontBold;
+        color: #323232;
+        font-family: $fontFamily;
+        margin-top: 1rem;
+
+    }
+
+    &--comment-container {
+        display: flex;
+        align-content: flex-start;
+    }
+
+
+    &__comment {
+        margin-left: 1rem;
+        text-align: left;
+        padding-bottom: 1rem;
+        
+    
+    }
+
+    &__date {
+    font-weight: $fontReg;
+    font-family: $fontFamily;
+    color: #afafaf;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    }
+}

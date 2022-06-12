@@ -1,0 +1,41 @@
+// breakpoints for media queries
+$breakpoints: (
+"tablet": 768px,
+"laptop": 1280px,
+);
+
+// font import
+@mixin font400 {
+  
+  @font-face {
+    font-family: "Avenir";
+    src: url(../assets/Font/AvenirNextLTPro-Regular.otf);
+    font-style: normal;
+    font-weight: 400;
+  }
+ 
+} 
+
+@mixin font700 {
+        @font-face {
+            font-family: "Avenir";
+            src: url(../assets/Font/AvenirNextLTPro-Bold.otf);
+            font-style: normal;
+            font-weight: 700;
+          }
+      }
+
+// media queries
+
+@mixin tablet  {
+  @media (min-width: map-get($breakpoints, "tablet")) {
+      @content;
+      }
+  }
+
+@mixin laptop {
+  @media (min-width: map-get($breakpoints, "laptop")) {
+      @content;
+      }
+  }
+  

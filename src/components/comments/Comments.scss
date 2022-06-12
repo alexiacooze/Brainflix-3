@@ -1,0 +1,150 @@
+@use "../../styles/mixins.scss" as *;
+@use "../../styles/partials.scss" as *;
+
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.comment {
+
+    &__amount-container {
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 1rem;
+    }
+
+    &__amount {
+        font-family: $fontFamily;
+        font-weight: $fontBold;
+        font-size: 15px;
+
+        @include tablet {
+              padding-left: 1.5rem;
+              font-size:$bodyDesktop ;
+            }
+
+        @include laptop {
+              padding-left: 6rem;
+              font-size:$bodyDesktop ;
+            }
+    }
+    
+
+&__avatar {
+
+}
+
+&__title {
+    font-family: $fontFamily;
+    font-weight: $fontBold;
+    font-size: $bodyMobile;
+    color: #AFAFAF ;
+    text-transform: uppercase;
+    padding-left: .5rem;
+
+    @include tablet {
+        position: relative;
+        right: 12.5rem;
+        font-size:$bodyDesktop;
+        
+      }
+
+    @include laptop {
+        position: relative;
+        right: 10.5rem;
+        font-size:$bodyDesktop;
+        
+      }
+}
+
+&__input {
+    background-color: #FAFAFA;
+    width: 70%;
+    height: 6rem;
+    margin-left: 4rem;
+    border-radius: 5px;
+    border: 1px solid #E1E1E1;
+    margin-top: .2rem;
+
+    @include tablet {
+        position: relative;
+        right: 5.9rem;
+        height: 3.5rem;
+        width: 58%;
+        font-size:$bodyDesktop;
+        
+      }
+
+      @include laptop {
+        position: relative;
+        right:5rem;
+        font-size:$bodyDesktop;
+        
+      }
+}
+
+&__input::placeholder { 
+    color: #323232;
+    padding-left: 1rem;
+   
+} 
+
+&__button-container {
+    border-bottom: 1.5px solid #E1E1E1;
+    width: 90%;
+    margin-left: 1rem;
+
+    @include tablet {
+    height:2.5rem;
+    margin-left: 2.5rem;
+    width: 85%;
+        
+    }
+}
+
+
+&__button-image {
+
+}
+
+       
+&__button {
+    background-color: #0095FF;
+    border: none;
+    width: 78%;
+    color: white;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    text-transform: uppercase;
+    border-radius: 4px;
+    margin-right: 1rem;
+    margin-left: 4rem;
+    margin-bottom: 1rem;
+    font-family: $fontFamily;
+    font-weight: $fontBold;
+    font-size: $bodyMobile;
+
+    @include tablet {
+        position: relative;
+        left: 17.5em;
+        bottom: 3.5rem;
+        height: 3.5rem;
+        width: 22%;
+        font-size:$bodyDesktop;
+        
+      }
+}
+
+}

@@ -1,0 +1,177 @@
+@use "../../styles/mixins.scss" as *;
+@use "../../styles/partials.scss" as *;
+
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+
+&__video-container {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+&__title-container {
+  display: flex;
+  justify-content: flex-start;
+
+}
+
+&__title {
+  margin-right: 1rem;
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+  font-weight: $fontBold;
+  font-family: $fontFamily;
+  font-size: $pageHeaderDesktop;
+  text-align: left;
+  
+  @include tablet {
+    margin-left: 2.5rem;
+    font-size: $pageHeaderDesktop  ;
+    }
+
+  @include laptop {
+    margin-left: 7rem;
+    font-size: $pageHeaderDesktop  ;
+    }
+}
+
+&__info-container {
+display: flex;
+flex-wrap: wrap;
+margin-left: 1rem;
+margin-top: 1rem;
+padding-top: 1rem;
+border-top: 1.5px solid #E1E1E1;
+width: 95%;
+border-bottom: 1.5px solid #E1E1E1;
+
+
+@include tablet {
+  padding-top: 0px;
+  margin-left: 1.5rem;
+  font-size: 16px;
+  border-top: none;
+  }
+}
+
+&_video-channel {
+  margin-right: 1rem;
+  margin-left: 1rem;
+  padding-bottom: 1rem;
+  font-weight: $fontBold;
+  font-family: $fontFamily;
+  font-size: 15px;
+
+  @include tablet {
+    margin-left: none;
+    font-size: $sectionHeaderDesktop;
+    }
+
+  @include laptop {
+    margin-left: 5.5rem;
+    font-size: $sectionHeaderDesktop;
+    }
+}
+
+&_video-views {
+  margin-right: 1.7rem;
+  padding-left: 1.5rem;
+  color: #AFAFAF;
+
+  @include tablet {
+    position: relative;
+    left: 24rem;
+    font-size: $sectionHeaderDesktop;
+     }
+
+  @include laptop {
+    position: relative;
+    left: 18rem;
+    font-size: $sectionHeaderDesktop;
+     }
+}
+
+&__views-icon {
+  padding-right: .5rem;
+}
+
+&_video-date {
+  margin-right: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  color: #AFAFAF;
+
+  @include tablet {
+    position: relative;
+    right: 9rem;
+    font-size: $sectionHeaderDesktop;
+    }
+}
+
+&_video-likes {
+  margin-right: 1rem;
+  margin-left: 1rem;
+  padding-left: 2rem;
+  color: #AFAFAF;
+
+  @include tablet {
+   position: relative;
+   left: 16rem;
+   font-size: $sectionHeaderDesktop;
+    }
+  @include laptop {
+   position: relative;
+   left: 10rem;
+   font-size: $sectionHeaderDesktop;
+    }
+}
+
+&__likes-icon {
+padding-right: .5rem;
+}
+
+&__description-container {
+margin-top: 1rem;
+display: flex;
+align-items: flex-start;
+justify-content: flex-start ;
+
+}
+
+&__video-description {
+  margin-right: 1rem;
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: $fontReg;
+  font-family: $fontFamily;
+  font-size: $bodyMobile;
+  text-align: left;
+  
+  @include tablet {
+    margin-left: 2.5rem;
+    margin-right: 4rem;
+    }
+
+  @include laptop {
+    margin-left: 7rem;
+    margin-right: 4rem;
+    }
+}
+
+}
+

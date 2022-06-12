@@ -1,0 +1,159 @@
+@use "../../src/styles/mixins.scss" as *;
+@use "../styles/partials.scss" as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.video {
+    margin-left: 1.5rem;
+    margin-right: 1rem;
+    
+    &__upload {
+    font-weight: $fontBold;
+    font-family: $fontFamily;
+    font-size:$pageHeaderMobile;
+    color: #323232;
+    text-decoration: underline white;
+    margin-top: 1.5rem;
+    }
+    
+    &__thumbnail-container {
+        text-decoration: underline white;
+    }
+
+    &__thumbnail {
+        color: #AFAFAF;
+    margin-top: 1.5rem;
+        text-transform: uppercase;
+        font-size: $subHeaderDesktop;
+        font-weight: $fontBold;
+    font-family: $fontFamily;
+        text-decoration: underline white;
+    }
+
+    &__image {
+        margin-top: .5rem;
+        width: 100%;
+        border-radius: .3rem;
+        text-decoration: underline white;
+    }
+
+    &__publish-container {
+        text-decoration: underline white;
+    }
+
+    &__title-container {
+        text-decoration: underline white;
+    }
+
+    &__title {
+        color: #AFAFAF;
+    margin-top: 1.5rem;
+        text-transform: uppercase;
+        font-weight: $fontBold;
+    font-family: $fontFamily;
+    font-size: $subHeaderDesktop;
+        text-decoration: underline white;
+        margin-bottom: .5rem;
+    }
+
+    &__title-input {
+        text-decoration: underline white;
+        background-color: #FAFAFA;
+    width: 100%;
+    height: 2.5rem;
+    border-radius: 5px;
+    border: 1px solid #E1E1E1;
+    margin-top: .2rem;
+    }
+
+    &__description {
+        color: #AFAFAF;
+    margin-top: 1.5rem;
+        text-transform: uppercase;
+        font-size: $subHeaderDesktop;
+        font-weight: $fontBold;
+    font-family: $fontFamily;
+        text-decoration: underline white;
+        margin-bottom: .5rem;
+    }
+
+    &__description-input {
+        background-color: #FAFAFA;
+    width: 100%;
+    // height:6rem;
+    padding-top: 1rem;
+    padding-bottom: 4rem;
+    border-radius: 5px;
+    border: 1px solid #E1E1E1;
+    margin-top: .2rem;
+    text-decoration: underline white;
+    text-align: start;
+    }
+
+    ::placeholder {
+        color: #323232;
+        padding-left: 1rem;
+        font-family: $fontFamily;
+        font-size: $bodyMobile;
+        font-weight: $fontReg;
+    }
+
+    &__publish-button {
+    margin-top: 1.5rem;
+        text-transform: uppercase;
+        font-size: $subHeaderDesktop;
+        font-weight: $fontBold;
+    font-family: $fontFamily;
+        text-decoration: underline #0095FF;
+        background-color: #0095FF;
+      border: none;
+      width: 100%;
+      color: white;
+      padding-top: .7rem;
+      padding-bottom: .7rem;
+      padding-right: 2rem;
+      text-transform: uppercase;
+      border-radius: 4px;
+      margin-right: 1rem;
+      margin-top:1rem;
+      font-family: $fontFamily;
+      font-weight: $fontBold;
+      
+    }
+
+    &__upload-icon {
+        position: relative;
+        top: .1rem;
+        right: 4rem;
+    }
+
+    &__cancel-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__cancel-button {
+    margin-top: 1.5rem;
+        font-size: $subHeaderDesktop;
+        font-weight: $fontBold;
+    font-family: $fontFamily;
+        text-transform: uppercase;
+        text-decoration: underline white;
+        background-color: white;
+        border: none;
+        color: #0095FF;
+    }
+}

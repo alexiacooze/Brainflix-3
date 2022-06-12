@@ -1,0 +1,77 @@
+@use "../../styles/mixins.scss" as *;
+@use "../../styles/partials.scss" as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.multi {
+  @include tablet {
+     margin-left: 2rem;
+     margin-top: 2rem;
+     margin-right: 22rem;
+    }
+
+  @include laptop {
+     margin-left: 2rem;
+     margin-top: 2rem;
+     margin-right: 10rem;
+    }
+  margin-top: 1rem;
+    display: flex;
+
+    &__image-container {
+
+    }
+
+    &__image {
+        width: 8rem;
+        height: 5rem;
+        border-radius: .5rem;
+        margin-left:1rem;
+      
+    }
+
+    &__content-container{
+        margin-left: 1rem;
+    }
+
+    &__title{
+        text-align: left;
+        margin-bottom: 1rem;
+        font-weight: $fontBold;
+        font-family: $fontFamily;
+        margin-right: 1rem;
+       display: block;
+  display: -webkit-box;
+  max-width: 100%;
+  height: 43px;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-decoration: none;
+  
+
+  @include laptop {
+    -webkit-line-clamp: 3;
+    width: 12rem;
+  }
+        
+    }
+
+    &__channel{
+        text-align: left;
+    }
+}
