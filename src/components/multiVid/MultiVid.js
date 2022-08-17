@@ -15,7 +15,7 @@ function VideoOutput({image, title, name}) {
 
       <div className="multi__content-container">
         <p className="multi__title">
-          {title}
+          {title} 
         </p>
         <p className="multi__channel">
           {name}

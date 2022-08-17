@@ -2,7 +2,6 @@ import React from 'react';
 import "./App.scss";
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import HomePage from '../src/pages/homePage'
-// import VideoUpload from '../src/pages/VideoUploads';
 import Header from './components/header/Header';
 import VideoUpload from './pages/videoUploadPage';
 

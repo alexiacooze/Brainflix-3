@@ -62,6 +62,8 @@ html {
   overflow: hidden;
   text-overflow: ellipsis;
   text-decoration: none;
+  color: black;
+  text-decoration: none;
   
 
   @include laptop {
@@ -73,5 +75,6 @@ html {
 
     &__channel{
         text-align: left;
+        color: black;
     }
 }

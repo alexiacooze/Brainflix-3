@@ -14,8 +14,8 @@ export default function NextVideo({TotalVideos}) {
                 {TotalVideos.map((video) => {
                   console.log(video.id);
                     return(
-                        <NavLink to={`/videos/${video.id}`} key={video.id}>
-                        <VideoOutput
+                        <NavLink to={`/videos/${video.id}`} key={video.id} style={{textDecoration: "none"}}>
+                        <VideoOutput 
                         
                         title={video.title}
                         name={video.channel}
